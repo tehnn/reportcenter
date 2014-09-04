@@ -1,0 +1,481 @@
+2014/09/04 05:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test3".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('test3')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('test3')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('test/test3')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=test/test3
+---
+2014/09/04 05:57:26 [error] [exception.CException] exception 'CException' with message 'TestController cannot find the requested view "v_test3".' in C:\xampp\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('v_test3', NULL, true)
+#1 C:\xampp\htdocs\reportcenter\protected\controllers\TestController.php(14): CController->render('v_test3')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): TestController->actionTest3()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('test3')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('test/test3')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/reportcenter/index.php?r=test/test3
+---
+2014/09/04 05:57:41 [error] [exception.CException] exception 'CException' with message 'TestController cannot find the requested view "v_test3".' in C:\xampp\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('v_test3', NULL, true)
+#1 C:\xampp\htdocs\reportcenter\protected\controllers\TestController.php(14): CController->render('v_test3')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): TestController->actionTest3()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('test3')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('test/test3')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/reportcenter/index.php?r=test/test3
+---
+2014/09/04 06:25:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('test4')
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('test/test4')
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reportcenter/index.php?r=test/test4
+---
+2014/09/04 06:26:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('Test4')
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/Test4')
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/Test4
+---
+2014/09/04 06:26:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('Test4')
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/Test4')
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/Test4
+---
+2014/09/04 06:26:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('Test4')
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/Test4')
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/Test4
+---
+2014/09/04 06:26:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('Test4')
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/Test4')
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/Test4
+---
+2014/09/04 06:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Test4".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('Test4')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('Test4')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/Test4')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/Test4
+---
+2014/09/04 06:28:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('Test4')
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/Test4')
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/Test4
+---
+2014/09/04 08:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php
+---
+2014/09/04 08:14:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:15:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:17:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:17:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:18:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:19:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:21:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:36:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:48:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php
+---
+2014/09/04 08:48:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:48:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:49:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:50:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:51:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:51:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 08:52:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Test/About
+---
+2014/09/04 09:15:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "About".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Site/Login
+---
+2014/09/04 09:24:11 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.textField" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\helpers\CHtml.php(2529): CComponent->__get('textField')
+#1 C:\xampp\htdocs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'textField')
+#2 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'textField', Array)
+#3 C:\xampp\htdocs\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'textField', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'textField', Array)
+#5 C:\xampp\htdocs\reportcenter\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\reportcenter\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(LoginForm), 'textField', Array)
+#7 C:\xampp\htdocs\reportcenter\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'textField', Array)
+#8 C:\xampp\htdocs\reportcenter\themes\mytheme\views\site\login.php(20): TbActiveForm->textFieldGroup(Object(LoginForm), 'textField')
+#9 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\reportcenter\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('Login')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Login')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/reportcenter/index.php?r=Site/Login
+HTTP_REFERER=http://localhost:89/reportcenter/index.php
+---
+2014/09/04 09:58:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'ระบบไม่สามารถดำเนินการ "About" ตามคำสั่งได้' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('About')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('About')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Test/About')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reportcenter/index.php?r=Test/About
+HTTP_REFERER=http://localhost:89/reportcenter/index.php
+---
+2014/09/04 10:47:43 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getState".' in C:\xampp\htdocs\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\reportcenter\themes\mytheme\views\layouts\main.php(62): CComponent->__call('getState', Array)
+#1 C:\xampp\htdocs\reportcenter\themes\mytheme\views\layouts\main.php(62): CWebApplication->getState('fullname')
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\reportcenter\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\reportcenter\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/reportcenter/index.php
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=Site/Login
+---
+2014/09/04 11:08:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'คุณไม่ได้รับอนุญาตให้ดำเนินการดังกล่าว' in C:\xampp\htdocs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\xampp\htdocs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reportcenter\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reportcenter/index.php?r=user/admin
+HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=User/index
+---
