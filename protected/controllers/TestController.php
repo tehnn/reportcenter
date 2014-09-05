@@ -13,7 +13,7 @@ class TestController extends Controller {
     public function actionTest3() {
         $this->render('v_test3', array(
             'data' => 'ข้อมูลส่งมาจาก Controller',
-            'data2' => date('Y-m-d'),
+            'data2' => date('Y-m-d H:i:s'),
             'data3' => 'นาย ก ข ค ง'
         ));
     }

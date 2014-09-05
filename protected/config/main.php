@@ -8,7 +8,8 @@ return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'ระบบรายงาน สสจ.แพร่',
     'theme'=>'mytheme',
-    'language'=>'th',
+    'language'=>'en',
+    'timeZone'=>'Asia/Bangkok',
     // preloading 'log' component
     'preload' => array('log', 'booster'),
     // autoloading model and component classes
