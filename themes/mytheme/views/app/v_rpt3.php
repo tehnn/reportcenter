@@ -82,12 +82,12 @@ $cs->registerScriptFile($dir . '/js/highcharts.js');
 <div id="chart">
 
     <?php
-    $d = $data->getData();
+    
     $hos = array();
     $val = array();
-    foreach ($d as $ds) {
-        array_push($hos, $ds['hosname']);
-        array_push($val, intval($ds['total']));
+    foreach ($model as $d) {
+        array_push($hos, $d['hosname']);
+        array_push($val, intval($d['total']));
     }
 
 

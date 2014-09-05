@@ -66,7 +66,7 @@ GROUP BY p.HOSPCODE";
 
         $this->render('v_rpt3', array(
             'model' => $dataReader,
-            'data'=>$data
+            
         ));
     }
 
