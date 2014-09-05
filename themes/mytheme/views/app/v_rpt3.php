@@ -95,7 +95,7 @@ $cs->registerScriptFile($dir . '/js/highcharts.js');
     $this->widget(
             'ext.booster.widgets.TbHighCharts', array(
         'options' => array(
-            'colors' => array('#673DD2'),
+            'colors' => array('#0EAF06'),
             'credits' => array('enabled' => false),
             'chart' => array(
                 'type' => 'column',
