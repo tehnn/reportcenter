@@ -79,12 +79,14 @@ $cs->registerScriptFile($dir . '/js/highcharts.js');
 
 <a download="somedata.csv" href="#" onclick="return ExcellentExport.csv(this, 'datatable', ',');" class="btn btn-danger">CSV</a>
 
+<a href="<?php echo $this->createUrl('App/Pdf'); ?>" target="_blank" class="btn btn-primary">PDF</a>
 <div id="chart">
 
     <?php
     
     $hos = array();
     $val = array();
+    
     foreach ($model as $d) {
         array_push($hos, $d['hosname']);
         array_push($val, intval($d['total']));
