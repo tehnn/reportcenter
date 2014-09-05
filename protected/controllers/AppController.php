@@ -129,8 +129,15 @@ GROUP BY p.HOSPCODE";
           
           //จบส่วน pdf
           
-         
         
     }
+    
+    public function actionForm(){
+        
+        $this->render('v_form');
+        
+    }
+    
+    
 
 }

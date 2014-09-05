@@ -821,3 +821,21 @@ Stack trace:
 REQUEST_URI=/reportcenter/index.php?r=App/Rpt1
 HTTP_REFERER=http://localhost:89/reportcenter/index.php?r=App/Menu1
 ---
+2014/09/05 15:36:25 [error] [php] Missing argument 3 for CHtml::dropDownList(), called in C:\xampp\htdocs\reportcenter\themes\mytheme\views\app\v_form.php on line 7 and defined (C:\xampp\htdocs\framework\web\helpers\CHtml.php:915)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CBaseController.php(95): AppController->renderInternal()
+#1 C:\xampp\htdocs\framework\web\CController.php(869): AppController->renderFile()
+#2 C:\xampp\htdocs\framework\web\CController.php(782): AppController->renderPartial()
+#3 C:\xampp\htdocs\reportcenter\protected\controllers\AppController.php(137): AppController->render()
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): AppController->actionForm()
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\framework\web\CController.php(286): AppController->runAction()
+#7 C:\xampp\htdocs\framework\web\CController.php(265): AppController->runActionWithFilters()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): AppController->run()
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reportcenter\index.php(13): CWebApplication->run()
+REQUEST_URI=/reportcenter/index.php?r=app/form
+in C:\xampp\htdocs\reportcenter\themes\mytheme\views\app\v_form.php (7)
+in C:\xampp\htdocs\reportcenter\protected\controllers\AppController.php (137)
+in C:\xampp\htdocs\reportcenter\index.php (13)
