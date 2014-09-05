@@ -83,10 +83,10 @@ $cs->registerScriptFile($dir . '/js/highcharts.js');
 
     <?php
     $d = $data->getData();
-    $dis = array();
+    $hos = array();
     $val = array();
     foreach ($d as $ds) {
-        array_push($dis, $ds['hosname']);
+        array_push($hos, $ds['hosname']);
         array_push($val, intval($ds['total']));
     }
 
@@ -111,7 +111,7 @@ $cs->registerScriptFile($dir . '/js/highcharts.js');
                 'min' => 0
             ),
             'xAxis' => array(
-                'categories' => $dis,
+                'categories' => $hos,
             ),
             'series' => array(
                 array(
