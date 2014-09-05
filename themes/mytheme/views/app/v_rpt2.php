@@ -6,6 +6,8 @@ $this->breadcrumbs = array(
 );
 ?>
 
+<div class="alert alert-success" role="alert"><font size="5"><i class="glyphicon glyphicon-user"></i> ประชากรรายสถานบริการ</font></div>
+
 
 <?php
 
