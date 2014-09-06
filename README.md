@@ -6,5 +6,5 @@ reportcenter
 
 การติดตั้ง<br>
 -แก้ไขค่า config/main.php ให้ ติดต่อกับฐานข้อมูล HDC<br>
--สร้างตาราง user ในฐานข้อมูล hdc (ไฟล์อยู่ที่ sql/user.sql)
+-สร้างตาราง user ในฐานข้อมูล hdc (ไฟล์อยู่ที่ protected/sql/user.sql)
 
