@@ -61,35 +61,33 @@ GROUP BY p.HOSPCODE";
 
         $dataReader = Yii::app()->db->createCommand($sql)->queryAll();
 
-     
+
 
         $this->render('v_rpt3', array(
             'model' => $dataReader,
             'd1' => $_POST['date1'],
-            'd2'=> $_POST['date2']
-            
-            
+            'd2' => $_POST['date2']
         ));
     }
-    
-    public function actionPdf(){
-         $sql = "SELECT p.HOSPCODE ,h.hosname, count(DISTINCT p.CID) as total 
+
+    public function actionPdf() {
+        $sql = "SELECT p.HOSPCODE ,h.hosname, count(DISTINCT p.CID) as total 
 from person p
 LEFT JOIN chospital h on p.HOSPCODE = h.hoscode
 GROUP BY p.HOSPCODE";
-         if(!empty($_GET['d1']) and !empty($_GET['d2'])){
-              $sql = "SELECT p.HOSPCODE ,h.hosname, count(DISTINCT p.CID) as total 
+        if (!empty($_GET['d1']) and !empty($_GET['d2'])) {
+            $sql = "SELECT p.HOSPCODE ,h.hosname, count(DISTINCT p.CID) as total 
 from person p
 LEFT JOIN chospital h on p.HOSPCODE = h.hoscode
 where p.BIRTH BETWEEN '$_GET[d1]' and '$_GET[d2]'
 GROUP BY p.HOSPCODE";
-         }
-         
-          $dataReader = Yii::app()->db->createCommand($sql)->queryAll();
-          
-          // ส่วนแสดง PDF
-          
-          $pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+        }
+
+        $dataReader = Yii::app()->db->createCommand($sql)->queryAll();
+
+        // ส่วนแสดง PDF
+
+        $pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
         spl_autoload_register(array('YiiBase', 'autoload'));
         //เพิ่ม  font
         $fontname = $pdf->addTTFfont('pdffont/FONTNONGNAM.TTF', 'TrueTypeUnicode', '', 32);
@@ -132,22 +130,17 @@ GROUP BY p.HOSPCODE";
         $pdf->lastPage();
 
         //Close and output PDF document
-       
-         $pdf->Output('filename.pdf', 'I'); // I= Preview , D=Download
-       
+
+        $pdf->Output('filename.pdf', 'I'); // I= Preview , D=Download
+
         Yii::app()->end();
-          
-          //จบส่วน pdf
-          
-        
+
+        //จบส่วน pdf
     }
-    
-    public function actionForm(){
-        
+
+    public function actionForm() {
+
         $this->render('v_form');
-        
     }
-    
-    
 
 }
