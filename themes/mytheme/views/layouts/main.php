@@ -76,9 +76,9 @@
             ));
             ?><!-- breadcrumbs -->
         <?php endif; ?>   
-
+            
         <?php echo $content; ?>
-
+        
         <div class="well" align="center">
             สสจ.แพร่ <br>
             2014-2020

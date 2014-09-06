@@ -65,6 +65,9 @@ GROUP BY p.HOSPCODE";
 
         $this->render('v_rpt3', array(
             'model' => $dataReader,
+            'd1' => $_POST['date1'],
+            'd2'=> $_POST['date2']
+            
             
         ));
     }
@@ -74,6 +77,13 @@ GROUP BY p.HOSPCODE";
 from person p
 LEFT JOIN chospital h on p.HOSPCODE = h.hoscode
 GROUP BY p.HOSPCODE";
+         if(!empty($_GET['d1']) and !empty($_GET['d2'])){
+              $sql = "SELECT p.HOSPCODE ,h.hosname, count(DISTINCT p.CID) as total 
+from person p
+LEFT JOIN chospital h on p.HOSPCODE = h.hoscode
+where p.BIRTH BETWEEN '$_GET[d1]' and '$_GET[d2]'
+GROUP BY p.HOSPCODE";
+         }
          
           $dataReader = Yii::app()->db->createCommand($sql)->queryAll();
           
