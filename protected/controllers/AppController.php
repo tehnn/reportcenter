@@ -26,20 +26,29 @@ class AppController extends Controller {
     }
 
     public function actionRpt2() {
-        $sql = "SELECT p.HOSPCODE ,h.hosname, count(DISTINCT p.CID) as total 
-from person p
-LEFT JOIN chospital h on p.HOSPCODE = h.hoscode
-GROUP BY p.HOSPCODE";
+        $filtersForm = new FiltersForm;
+        if (isset($_GET['FiltersForm']))
+            $filtersForm->filters = $_GET['FiltersForm'];
+        $sql = "SELECT p.HOSPCODE,h.hosname, count(DISTINCT p.CID) as total 
+                from person p LEFT JOIN chospital h on p.HOSPCODE = h.hoscode GROUP BY p.HOSPCODE";
 
-        $dataReader = Yii::app()->db->createCommand($sql)->queryAll();
-        $dataProvider = new CArrayDataProvider($dataReader, array(
-            'totalItemCount' => count($dataReader),
+        $rawData = Yii::app()->db->createCommand($sql)->queryAll();
+        $filteredData = $filtersForm->filter($rawData);
+        $dataProvider = new CArrayDataProvider($filteredData, array(
+            //$dataProvider = new CSqlDataProvider($sql, array(
+            'totalItemCount' => count($rawData),
             'keyField' => 'HOSPCODE',
             'pagination' => array(
-                'pageSize' => 15
+                'pageSize' => 9
+            ),
+            'sort' => array(
+                'attributes' => array_keys($rawData[0]),
             ),
         ));
+
+
         $this->render('v_rpt2', array(
+            'filtersForm' => $filtersForm,
             'model' => $dataProvider
         ));
     }
