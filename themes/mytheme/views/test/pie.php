@@ -1,5 +1,6 @@
 <h1>UTEHN PHNU</h1>
 <?php
+//ควรประมวลผลข้อมูลที่ controller แล้วค่อยโยนมาให้ view
 $data = array
  (
   array("นายแพทย์ ก",22),
