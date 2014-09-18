@@ -24,5 +24,20 @@ class TestController extends Controller {
                 )
         );
     }
+    
+    public function actionMd5(){
+        $pass = md5('112233');
+        echo $pass;
+        echo "<br>";
+        $login='112233';
+        echo md5($login);
+        
+    }
+    public function actionGenPie(){
+        
+       $this->render('pie',array(
+           
+       ));
+    }
 
 }

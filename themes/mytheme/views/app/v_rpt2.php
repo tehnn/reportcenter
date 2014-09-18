@@ -9,7 +9,6 @@ $this->breadcrumbs = array(
 
 
 <?php
-//$this->widget('zii.widgets.grid.CGridView'
 $this->widget('booster.widgets.TbGridView'
         , array(
     'dataProvider' => $model,
@@ -19,7 +18,6 @@ $this->widget('booster.widgets.TbGridView'
     'columns'=>array(
         array(
             'name'=>'HOSPCODE',
-            //'type'=>'raw',
             'header'=>'รหัส'            
         ),
         array(

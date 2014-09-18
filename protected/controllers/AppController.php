@@ -37,7 +37,7 @@ class AppController extends Controller {
         $dataProvider = new CArrayDataProvider($filteredData, array(
             //$dataProvider = new CSqlDataProvider($sql, array(
             'totalItemCount' => count($rawData),
-            'keyField' => 'HOSPCODE',
+            //'keyField' => 'HOSPCODE',
             'pagination' => array(
                 'pageSize' => 9
             ),
